@@ -1,0 +1,16 @@
+html, body {
+    margin: 0;
+}
+
+header {
+    
+    
+    background-color: F55A5A;
+    color: FFFFFF;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
