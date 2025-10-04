@@ -1,11 +1,11 @@
 export default function Entry(props) {
     return (
-<article className="journal-entry">
+        <article className="journal-entry">
             <div className="main-image-container">
                 <img 
                     className="main-image"
-                    src={props.img.src}
-                    alt={props.img.alt}
+                    src={props.location.img.src}
+                    alt={props.location.img.alt}
                 />
             </div>
             <div className="info-container">
@@ -14,11 +14,11 @@ export default function Entry(props) {
                     src="../images/marker.png" 
                     alt="map marker icon"
                 />
-                <span className="country">{props.country}</span>
-                <a href={props.googleMapsLink}>View on Google Maps</a>
-                <h2 className="entry-title">{props.title}</h2>
-                <p className="trip-dates">{props.dates}</p>
-                <p className="entry-text">{props.text}</p>
+                <span className="country">{props.location.country}</span>
+                <a href={props.location.googleMapsLink}>View on Google Maps</a>
+                <h2 className="entry-title">{props.location.title}</h2>
+                <p className="trip-dates">{props.location.dates}</p>
+                <p className="entry-text">{props.location.text}</p>
             </div>
         </article>
     )
