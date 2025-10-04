@@ -6,7 +6,7 @@ export default function App() {
     const travelElements = travelData.map((location) => {
         return (<Entry
                     key={location.id}
-                    location={location}
+                    {...location}
                 />
         )
     })
